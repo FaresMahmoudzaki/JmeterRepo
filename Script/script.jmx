@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
+        <stringProp name="ThreadGroup.num_threads">${__P(threads,10)}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${__P(rampup,5)}</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <stringProp name="LoopController.loops">${__P(loop,10)}</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - creds file" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">D:/JMeterScript/data/creds.csv</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames"></stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config -beneficiaries_data" enabled="true">
+          <stringProp name="filename">D:/JMeterScript/data/beneficiaries_data.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config-device_id" enabled="true">
+          <stringProp name="filename">D:/JMeterScript/data/device_ids.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config-ip_address" enabled="true">
+          <stringProp name="filename">D:/JMeterScript/data/ip_pools.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config-Trans_AMT" enabled="true">
+          <stringProp name="filename">D:/JMeterScript/data/transaction_types.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config- shipping_Address" enabled="true">
+          <stringProp name="filename">D:/JMeterScript/data/shipping_addresses.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config-User_data" enabled="true">
+          <stringProp name="filename">D:/JMeterScript/data/users_data.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config-card" enabled="true">
+          <stringProp name="filename">D:/JMeterScript/data/card.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames"></stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Accept</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="jp@gc - Dummy Sampler - ${__threadNum()}" enabled="false">
+          <boolProp name="WAITING">true</boolProp>
+          <boolProp name="SUCCESFULL">true</boolProp>
+          <stringProp name="RESPONSE_CODE">200</stringProp>
+          <stringProp name="RESPONSE_MESSAGE">OK</stringProp>
+          <stringProp name="REQUEST_DATA">${country}
+${iso2}
+${iso3}
+${Domain}</stringProp>
+          <stringProp name="RESPONSE_DATA"></stringProp>
+          <stringProp name="RESPONSE_TIME">${__Random(50,500)}</stringProp>
+          <stringProp name="LATENCY">${__Random(1,50)}</stringProp>
+          <stringProp name="CONNECT">${__Random(1,5)}</stringProp>
+          <stringProp name="URL"></stringProp>
+          <stringProp name="RESULT_CLASS">org.apache.jmeter.samplers.SampleResult</stringProp>
+        </kg.apc.jmeter.samplers.DummySampler>
+        <hashTree>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">def list = [&quot;true&quot; , &quot;false&quot;]
+def re =list[new Random().nextInt(list.size())]
+vars.put(&quot;vpnValue&quot; , re) ;</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">def vpnList = [&apos;vpn1&apos;, &apos;vpn2&apos;, &apos;vpn3&apos;, &apos;vpn4&apos;, &apos;vpn5&apos;]
+def randomVpn = vpnList[new Random().nextInt(vpnList.size())]
+vars.put(&apos;vpnValue1&apos;, randomVpn)</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor - getCountryName&amp;&amp;Code" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import java.util.Locale
+
+def countryMap = [:]
+
+// loop على كل الدول
+for (code in Locale.getISOCountries()) {
+    def locale = new Locale(&quot;&quot;, code)
+    def countryName = locale.getDisplayCountry(Locale.ENGLISH)
+    def iso3 = locale.getISO3Country()
+    
+    countryMap[countryName] = [
+        iso2: code,
+        iso3: iso3
+    ]
+}
+
+// random country
+def countries = countryMap.keySet().toList()
+def randomCountry = countries[new Random().nextInt(countries.size())]
+
+// get iso2 &amp; iso3
+def iso2 = countryMap[randomCountry].iso2
+def iso3 = countryMap[randomCountry].iso3
+
+// save in JMeter vars
+vars.put(&apos;country&apos;, randomCountry)
+vars.put(&apos;iso2&apos;, iso2)
+vars.put(&apos;iso3&apos;, iso3)</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+        </hashTree>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="false"/>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller-Login " enabled="false">
+            <boolProp name="TransactionController.parent">true</boolProp>
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request - login   ${__threadNum}" enabled="false">
+              <stringProp name="HTTPSampler.domain">192.168.1.47</stringProp>
+              <stringProp name="HTTPSampler.port">7979</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.path">/DGRTF/user/login</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&#xd;
+&#xd;
+    &quot;username&quot;: &quot;${email}&quot;,&#xd;
+    &quot;password&quot;: &quot;${password}&quot;&#xd;
+&#xd;
+}&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="false">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">token_regx</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;token&quot;\s*:\s*&quot;([^&quot;]+)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">TOKEN_NOT_FOUND</stringProp>
+                <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="false">
+                <stringProp name="JSONPostProcessor.referenceNames">token_JSON</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.token</stringProp>
+                <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+                <stringProp name="JSONPostProcessor.defaultValues">JSON_NOT_FOUND</stringProp>
+              </JSONPostProcessor>
+              <hashTree/>
+              <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion - assertToken" enabled="false">
+                <stringProp name="JSON_PATH">$.message</stringProp>
+                <stringProp name="EXPECTED_VALUE">Operation successful</stringProp>
+                <boolProp name="JSONVALIDATION">true</boolProp>
+                <boolProp name="EXPECT_NULL">false</boolProp>
+                <boolProp name="INVERT">false</boolProp>
+                <boolProp name="ISREGEX">false</boolProp>
+              </JSONPathAssertion>
+              <hashTree/>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="false">
+                <stringProp name="ConstantTimer.delay">1000</stringProp>
+                <stringProp name="RandomTimer.range">4000</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller- sentTransaction " enabled="true">
+          <boolProp name="TransactionController.parent">true</boolProp>
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request - sendTransaction  ${__threadNum}" enabled="true">
+            <stringProp name="HTTPSampler.domain">192.168.1.47</stringProp>
+            <stringProp name="HTTPSampler.port">7979</stringProp>
+            <stringProp name="HTTPSampler.path">/FrdEngine/transaction</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+  &quot;tran_ref_number&quot;: &quot;${tran_ref_number}&quot; ,&#xd;
+  &quot;ip&quot; : &quot;${ip}&quot;,&#xd;
+  &quot;ip_vpn&quot; : ${vpnValue},&#xd;
+  &quot;ip_tor&quot; : ${vpnValue},&#xd;
+  &quot;ip_city&quot; : &quot;${ip_city}&quot;,&#xd;
+  &quot;ip_cntry_code_Iso2&quot; : &quot;${iso2}&quot;,&#xd;
+  &quot;ip_country_name&quot; :&quot;${country}&quot;,&#xd;
+  &quot;ip_latitude&quot; : ${__groovy(vars.get(&quot;ip_latitude&quot;) ?: &quot;null&quot;)},&#xd;
+  &quot;ip_longitude&quot; : null,&#xd;
+  &quot;ip_proxy&quot; : false,&#xd;
+  &quot;ip_asn_name&quot; : &quot;${isp}&quot;,&#xd;
+  &quot;ip_timeZone_offset&quot; : &quot;${tz}&quot;,&#xd;
+  &quot;ip_public_proxy&quot; : false,&#xd;
+  &quot;ip_type&quot; : &quot;${ip_type}&quot;,&#xd;
+  &quot;tran_action_type&quot; : &quot;${action_type}&quot;,&#xd;
+  &quot;available_balance&quot; : 5000.5,&#xd;
+  &quot;channel_website_name&quot; : &quot;${channel_website}&quot;,&#xd;
+  &quot;auth_method&quot; : &quot;${auth_method}&quot;,&#xd;
+  &quot;activity_type&quot; : &quot;online_purchase&quot;,&#xd;
+  &quot;tran_channel_type&quot; : &quot;web&quot;,&#xd;
+  &quot;tran_bank_status&quot; : &quot;${bankStatus}&quot;,&#xd;
+  &quot;user_affiliate_id&quot; : &quot;AFF-12345&quot;,&#xd;
+  &quot;user_affiliate_name&quot; : &quot;Partner Store&quot;,&#xd;
+  &quot;order_memo&quot; : &quot;Customer purchase of electronics&quot;,&#xd;
+  &quot;user_email&quot; : &quot;${user_email}&quot;,&#xd;
+  &quot;user_email_domain&quot; : &quot;${Domain}&quot;,&#xd;
+  &quot;user_password_hash&quot; : &quot;${hasvalue}&quot;,&#xd;
+  &quot;user_fullname&quot; : &quot;${user_fullname}&quot;,&#xd;
+  &quot;user_name&quot; : &quot;${user_name}&quot;,&#xd;
+  &quot;user_id&quot; : &quot;${user_id}&quot;,&#xd;
+  &quot;user_dob&quot; : ${__Random(150,400,)},&#xd;
+  &quot;user_account_status&quot; : &quot;${user_account_status}&quot;,&#xd;
+  &quot;user_created&quot; : ${randomTimestamp},&#xd;
+  &quot;user_country_name&quot; : &quot;${country}&quot;,&#xd;
+  &quot;user_country_iso3&quot; : &quot;${iso3}&quot;,&#xd;
+  &quot;user_country_iso2&quot; : &quot;${iso2}&quot;,&#xd;
+  &quot;user_place_of_birth&quot; : &quot;Boston&quot;,&#xd;
+  &quot;user_city&quot; : &quot;${ip_city}&quot;,&#xd;
+  &quot;user_region&quot; : &quot;NY&quot;,&#xd;
+  &quot;user_zip&quot; : &quot;${__Random(10000,99999,)}&quot;,&#xd;
+  &quot;user_street&quot; : &quot;${__Random(10,500,)} Main Street&quot;,&#xd;
+  &quot;user_street2&quot; : &quot;Apt ${__Random(10,500,)}&quot;,&#xd;
+  &quot;user_type&quot; : &quot;${user_type}&quot;,&#xd;
+  &quot;user_employee_flag&quot; : false,&#xd;
+  &quot;user_bank_cntry_code&quot; : &quot;${iso2}&quot;,&#xd;
+  &quot;payment_id&quot; : &quot;PAY-ABC123XYZ&quot;,&#xd;
+  &quot;payment_mode&quot; : &quot;card&quot;,&#xd;
+  &quot;payment_provider&quot; : &quot;Stripe&quot;,&#xd;
+  &quot;card_fullname&quot; : &quot;John M Doe&quot;,&#xd;
+  &quot;user_bank_name&quot; : &quot;Chase Bank&quot;,&#xd;
+  &quot;user_balance&quot; : ${__Random(1000,50000,)},&#xd;
+  &quot;user_gender&quot; : &quot;${userGender}&quot;,&#xd;
+  &quot;user_family_status&quot; : &quot;${familyStatuses}&quot;,&#xd;
+  &quot;user_income&quot; : ${__Random(30000,150000,)},&#xd;
+  &quot;user_verification_level&quot; : &quot;${user_verification_level}&quot;,&#xd;
+  &quot;card_bin&quot; : ${card_bin},&#xd;
+  &quot;card_hash&quot; : &quot;${hasvalue}&quot;,&#xd;
+  &quot;card_last&quot; : null,&#xd;
+  &quot;card_expire&quot; : &quot;${card_expire}&quot;,&#xd;
+  &quot;card_avs_result&quot; : &quot;${card_avs_result}&quot;,&#xd;
+  &quot;card_cvv_result&quot; : ${card_cvv_result},&#xd;
+  &quot;card_issuer&quot; : &quot;${cardIssuers}&quot;,&#xd;
+  &quot;card_brand&quot; : &quot;${cardBrands}&quot;,&#xd;
+  &quot;card_type&quot; : &quot;${cardTypes}&quot;,&#xd;
+  &quot;bin_level&quot; : &quot;${bin_level}&quot;,&#xd;
+  &quot;bank_phone&quot; : &quot;021234567890&quot;,&#xd;
+  &quot;card_bin_valid&quot; : true,&#xd;
+  &quot;card_country_name&quot; : &quot;${country}&quot;,&#xd;
+  &quot;card_country_iso2&quot; : &quot;${iso2}&quot;,&#xd;
+  &quot;card_bank_url&quot; : &quot;https://www.chase.com&quot;,&#xd;
+  &quot;card_bin_bank&quot; : &quot;Chase Bank&quot;,&#xd;
+  &quot;receiver_full_name&quot; : &quot;Jane Smith&quot;,&#xd;
+  &quot;receiver_bank_account&quot; : &quot;9876543210&quot;,&#xd;
+  &quot;card_sca_method&quot; : &quot;${card_sca_method}&quot;,&#xd;
+  &quot;user_bank_account&quot; : &quot;1234567890&quot;,&#xd;
+  &quot;card_status3d&quot; : &quot;${card_status3d}&quot;,&#xd;
+  &quot;phone_number&quot; : &quot;+201231213214&quot;,&#xd;
+  &quot;tran_type&quot; : &quot;${tran_type}&quot;,&#xd;
+  &quot;tran_amount&quot; : ${transaction_amount},&#xd;
+  &quot;tran_amount_original&quot; : 1000000.0,&#xd;
+  &quot;tran_currency&quot; : &quot;${currCode}&quot;,&#xd;
+  &quot;brand_id&quot; : &quot;BRAND-001&quot;,&#xd;
+  &quot;shipping_country_iso2&quot; : &quot;${iso2}&quot;,&#xd;
+  &quot;shipping_city&quot; : &quot;${shipping_city}&quot;,&#xd;
+  &quot;shipping_region&quot; : &quot;${shipping_region}&quot;,&#xd;
+  &quot;shipping_zip&quot; : &quot;${shipping_zip}&quot;,&#xd;
+  &quot;shipping_street&quot; : &quot;${shipping_street}&quot;,&#xd;
+  &quot;shipping_street2&quot; : &quot;Floor 2&quot;,&#xd;
+  &quot;shipping_phone&quot; : &quot;+${shipping_phone}&quot;,&#xd;
+  &quot;shipping_full_name&quot; : &quot;John M Doe&quot;,&#xd;
+  &quot;shipping_method&quot; : &quot;express&quot;,&#xd;
+  &quot;billing_country_iso2&quot; : &quot;${shipping_country_iso2}&quot;,&#xd;
+  &quot;billing_city&quot; : &quot;${ip_city}&quot;,&#xd;
+  &quot;billing_region&quot; : &quot;NY&quot;,&#xd;
+  &quot;billing_zip&quot; : &quot;${__Random(10000,99999,)}&quot;,&#xd;
+  &quot;billing_street&quot; : &quot;${__Random(10,500,)} Main Street&quot;,&#xd;
+  &quot;billing_street2&quot; : &quot;Apt ${__Random(10,500,)}&quot;,&#xd;
+  &quot;billing_phone&quot; : &quot;+12125559876&quot;,&#xd;
+  &quot;merchant_discount_code&quot; : &quot;SAVE20&quot;,&#xd;
+  &quot;bonus_campaign_id&quot; : &quot;CAMP-2024-01&quot;,&#xd;
+  &quot;merchant_gift&quot; : false,&#xd;
+  &quot;merchant_gift_message&quot; : false,&#xd;
+  &quot;merchant_id&quot; : &quot;MERCH-5678&quot;,&#xd;
+  &quot;merchant_created_at&quot; : 1577836800,&#xd;
+  &quot;merchant_country&quot; : &quot;${iso2}&quot;,&#xd;
+  &quot;merchant_category&quot; : &quot;electronics&quot;,&#xd;
+  &quot;merchant_details_url&quot; : &quot;https://www.merchant-store.com/details&quot;,&#xd;
+  &quot;tran_date&quot; : ${__groovy(System.currentTimeMillis()/1000)},&#xd;
+  &quot;old_changed_value&quot; : &quot;${old_changed_value}&quot;,&#xd;
+  &quot;new_changed_value&quot; : &quot;${new_changed_value}&quot;,&#xd;
+  &quot;http_referrer&quot; : &quot;https://www.google.com/search&quot;,&#xd;
+  &quot;is_holiday&quot; : false,&#xd;
+  &quot;tran_impact&quot; : &quot;high&quot;,&#xd;
+  &quot;tran_direction&quot; : &quot;outbound&quot;,&#xd;
+  &quot;tran_country&quot; : &quot;${iso2}&quot;,&#xd;
+  &quot;tran_channel_code&quot; : &quot;WEB-001&quot;,&#xd;
+  &quot;custom_fields&quot; : {&#xd;
+    &quot;loyalty_points&quot; : &quot;500&quot;,&#xd;
+    &quot;promo_applied&quot; : &quot;true&quot;,&#xd;
+    &quot;session_id&quot; : &quot;sess_xyz789&quot;&#xd;
+  },&#xd;
+  &quot;user_category&quot; : &quot;premium&quot;,&#xd;
+  &quot;device_details&quot; : {&#xd;
+    &quot;device_id&quot; : &quot;${device_id}&quot;,&#xd;
+    &quot;device_details_type&quot; : &quot;mobile&quot;,&#xd;
+    &quot;device_session_id&quot; : &quot;${device_session_id}&quot;,&#xd;
+    &quot;device_adblock&quot; : false,&#xd;
+    &quot;device_audio_hash&quot; : &quot;audio_hash_${__Random(1000,9999,)}&quot;,&#xd;
+    &quot;device_battery_charging&quot; : true,&#xd;
+    &quot;device_battery_level&quot; : ${__Random(10,99,)},&#xd;
+    &quot;device_browser_hash&quot; : &quot;browser_hash_${__Random(100,500,)}&quot;,&#xd;
+    &quot;device_browser&quot; : &quot;${browsers}&quot;,&#xd;
+    &quot;device_browser_version&quot; : &quot;120.0.6099.109&quot;,&#xd;
+    &quot;device_version_last_update&quot; : 1705449600,&#xd;
+    &quot;device_canvas_hash&quot; : &quot;canvas_hash_abcde&quot;,&#xd;
+    &quot;device_cookie_enabled&quot; : true,&#xd;
+    &quot;device_cookie_hash&quot; : &quot;cookie_hash_${__RandomString(3,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,)}&quot;,&#xd;
+    &quot;device_hash&quot; : &quot;device_hash_unique_${__RandomString(3,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,)}&quot;,&#xd;
+    &quot;device_memory&quot; : 1,&#xd;
+    &quot;device_type&quot; : &quot;${deviceTypes}&quot;,&#xd;
+    &quot;device_do_not_track&quot; : false,&#xd;
+    &quot;device_flash_enabled&quot; : false,&#xd;
+    &quot;device_font_count&quot; : 45,&#xd;
+    &quot;device_font_hash&quot; : &quot;font_hash_klmno&quot;,&#xd;
+    &quot;device_font_list&quot; : &quot;Arial,Helvetica,Times New Roman&quot;,&#xd;
+    &quot;device_hardware_concurrency&quot; : 8,&#xd;
+    &quot;device_java_enabled&quot; : false,&#xd;
+    &quot;device_accept_language&quot; : &quot;en-US,en;q=0.9&quot;,&#xd;
+    &quot;device_os&quot; : &quot;${os}&quot;,&#xd;
+    &quot;device_platform&quot; : &quot;iPhone&quot;,&#xd;
+    &quot;device_plugin_count&quot; : 0,&#xd;
+    &quot;device_plugin_hash&quot; : &quot;plugin_hash_empty&quot;,&#xd;
+    &quot;device_plugin_list&quot; : &quot;&quot;,&#xd;
+    &quot;device_is_private&quot; : false,&#xd;
+    &quot;device_region_language&quot; : &quot;en-US&quot;,&#xd;
+    &quot;device_region_timezone&quot; : &quot;America/New_York&quot;,&#xd;
+    &quot;device_screen_resolution&quot; : &quot;1170x2532&quot;,&#xd;
+    &quot;device_screen_color_depth&quot; : 24,&#xd;
+    &quot;device_screen_pixel_ratio&quot; : 3,&#xd;
+    &quot;device_social_logins&quot; : &quot;google,facebook&quot;,&#xd;
+    &quot;device_touch_support&quot; : true,&#xd;
+    &quot;device_user_agent&quot; : &quot;Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)&quot;,&#xd;
+    &quot;device_webgl_hash&quot; : &quot;webgl_hash_pqrst&quot;,&#xd;
+    &quot;device_webgl_vendor&quot; : &quot;Apple GPU&quot;,&#xd;
+    &quot;device_webrtc_activated&quot; : true,&#xd;
+    &quot;device_webrtc_count&quot; : 2,&#xd;
+    &quot;device_webrtc_ips&quot; : &quot;192.168.1.100&quot;,&#xd;
+    &quot;device_window_size&quot; : &quot;390x844&quot;,&#xd;
+    &quot;device_dns_ip&quot; : &quot;dns.google&quot;,&#xd;
+    &quot;device_dns_ip_cntry_iso2&quot; : &quot;US&quot;,&#xd;
+    &quot;device_dns_ip_isp&quot; : &quot;device.local.network.com&quot;,&#xd;
+    &quot;device_ip_address&quot; : &quot;192.168.1.0&quot;,&#xd;
+    &quot;device_ip_cntry_iso2&quot; : &quot;US&quot;,&#xd;
+    &quot;device_ip_isp&quot; : &quot;Comcast&quot;,&#xd;
+    &quot;device_model&quot; : &quot;iPhone 14 Pro&quot;,&#xd;
+    &quot;device_os_version&quot; : &quot;17.0&quot;,&#xd;
+    &quot;device_gpu&quot; : &quot;Apple A16 GPU&quot;,&#xd;
+    &quot;device_media_devices&quot; : 3&#xd;
+  },&#xd;
+  &quot;item&quot; : [ {&#xd;
+    &quot;item_id&quot; : &quot;ITEM-001&quot;,&#xd;
+    &quot;item_quantity&quot; : 2,&#xd;
+    &quot;item_name&quot; : &quot;Wireless Headphones&quot;,&#xd;
+    &quot;item_price&quot; : 149.99,&#xd;
+    &quot;item_store&quot; : &quot;Electronics Plus&quot;,&#xd;
+    &quot;item_store_country&quot; : &quot;US&quot;,&#xd;
+    &quot;item_category&quot; : &quot;audio&quot;,&#xd;
+    &quot;item_url&quot; : &quot;https://www.store.com/products/phone-case&quot;,&#xd;
+    &quot;item_custom_fields&quot; : {&#xd;
+      &quot;color&quot; : &quot;black&quot;,&#xd;
+      &quot;warranty&quot; : &quot;2-years&quot;,&#xd;
+      &quot;model&quot; : &quot;WH-1000XM5&quot;&#xd;
+    }&#xd;
+  }, {&#xd;
+    &quot;item_id&quot; : &quot;ITEM-002&quot;,&#xd;
+    &quot;item_quantity&quot; : 1,&#xd;
+    &quot;item_name&quot; : &quot;Phone Case&quot;,&#xd;
+    &quot;item_price&quot; : 29.99,&#xd;
+    &quot;item_store&quot; : &quot;Electronics Plus&quot;,&#xd;
+    &quot;item_store_country&quot; : &quot;US&quot;,&#xd;
+    &quot;item_category&quot; : &quot;accessories&quot;,&#xd;
+    &quot;item_url&quot; : &quot;https://www.store.com/products/phone-case&quot;,&#xd;
+    &quot;item_custom_fields&quot; : {&#xd;
+      &quot;color&quot; : &quot;blue&quot;,&#xd;
+      &quot;material&quot; : &quot;silicone&quot;&#xd;
+    }&#xd;
+  } ],&#xd;
+  &quot;beneficiary&quot; : {&#xd;
+    &quot;benef_entity_type&quot; : &quot;${benef_entity_type}&quot;,&#xd;
+    &quot;benef_num&quot; : &quot;BENEF-${__Random(1000,9999,)}&quot;,&#xd;
+    &quot;benef_name&quot; : &quot;${benef_name}&quot;,&#xd;
+    &quot;benef_phone&quot; : &quot;+${benef_phone}&quot;,&#xd;
+    &quot;benef_email&quot; : &quot;jane.smith@example.com&quot;,&#xd;
+    &quot;benef_cntry_code_iso2&quot; : &quot;${benef_country}&quot;,&#xd;
+    &quot;benef_city&quot; : &quot;${ip_city}&quot;,&#xd;
+    &quot;benef_state&quot; : &quot;California&quot;,&#xd;
+    &quot;benef_post_code&quot; : &quot;${__Random(40000,99999,)}&quot;,&#xd;
+    &quot;benef_bank_type&quot; : &quot;${benef_bank_type}&quot;,&#xd;
+    &quot;benef_acct_type&quot; : &quot;${benef_acct_type}&quot;,&#xd;
+    &quot;benef_bank_cntry_code_iso2&quot; : &quot;${iso2}&quot;,&#xd;
+    &quot;benef_bank_city&quot; : &quot;Los Angeles&quot;,&#xd;
+    &quot;benef_bank_state&quot; : &quot;California&quot;,&#xd;
+    &quot;benef_bank_post_code&quot; : &quot;${__Random(10000,99999,)}&quot;,&#xd;
+    &quot;benef_bank_num&quot; : &quot;021000021&quot;,&#xd;
+    &quot;benef_bank_name&quot; : &quot;${benef_bank_name}&quot;,&#xd;
+    &quot;benef_acct_num&quot; : &quot;${benef_acct_num}&quot;,&#xd;
+    &quot;benef_curr_code&quot; : &quot;${currCode}&quot;,&#xd;
+    &quot;benef_balance&quot; : 12500.75,&#xd;
+    &quot;benef_description&quot; : &quot;In software testing, attention to detail makes the real In software testing, attention to detail makes the real difference between a stable system and one full of hidden defects. A tester does not only execute , bsadasd inputs, and integration points. Clear documentation, proper validation, and structured reporting help teams deliver reliable solutions that meet both business and technical expectations successfully. Always&quot;,&#xd;
+    &quot;benef_address&quot; : &quot;789 Sunset Boulevard&quot;&#xd;
+  },&#xd;
+  &quot;account&quot; : {&#xd;
+    &quot;acct_num&quot; : &quot;${__RandomString(3,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,)}-${__Random(100000000,999999999,)}&quot;,&#xd;
+    &quot;acct_limit_type&quot; : &quot;daily&quot;,&#xd;
+    &quot;acct_limit_amt&quot; : 10000.0,&#xd;
+    &quot;acct_limit_curr_code&quot; : &quot;${currCode}&quot;,&#xd;
+    &quot;acct_cntry_code_iso2&quot; : &quot;${iso2}&quot;,&#xd;
+    &quot;acct_billing_curr_code&quot; : &quot;${currCode}&quot;,&#xd;
+    &quot;acct_branch_id&quot; : &quot;BRANCH-${__Random(10,500,)}&quot;,&#xd;
+    &quot;acct_age&quot; : 5.5,&#xd;
+    &quot;acct_credit_limit&quot; : 15000.0,&#xd;
+    &quot;acct_balance&quot; : 5000.5,&#xd;
+    &quot;acct_branch_name&quot; : &quot;Manhattan Main Branch&quot;,&#xd;
+    &quot;acct_open_date&quot; : 1546300800,&#xd;
+    &quot;acct_Iban&quot; : &quot;${hasvalue}&quot;,&#xd;
+    &quot;acct_type&quot; : &quot;${accountTypes}&quot;,&#xd;
+    &quot;acct_category&quot; : &quot;${userCategories}&quot;&#xd;
+  }&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="false">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer ${token_regx}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor-Transactions" enabled="true">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">def actionType = vars.get(&quot;action_type&quot;)
+
+def ranges = [
+  &apos;money_transfer&apos;: [1000, 10000], &apos;withdrawal&apos;: [500, 5000],
+    &apos;purchase&apos;: [10, 2000], &apos;deposit&apos;: [1000, 25000]
+]
+
+
+def range = ranges[actionType] ?: [10000, 5000000]
+
+def min = range[0]
+def max = range[1]
+
+def amount
+
+if (min == max) {
+    amount = min.toString()
+} else {
+    amount = (new Random().nextInt(max - min + 1) + min).toString()
+}
+
+
+def tran_type=[&apos;debit&apos;, &apos;credit&apos;]
+def type = tran_type[new Random().nextInt(tran_type.size())]
+
+vars.put(&quot;transaction_amount&quot;, amount)
+vars.put(&quot;tran_type&quot;, type)
+
+def channel_website =[&apos;amazon.com&apos;, &apos;noon.com&apos;, &apos;apple.com&apos;, &apos;local-store.net&apos;]
+def x = channel_website[new Random().nextInt(channel_website.size())]
+vars.put(&quot;channel_website&quot;, x)
+
+def old_changed_value =[&apos;pending&apos;, &apos;processing&apos;, &apos;null&apos;]
+def old = old_changed_value[new Random().nextInt(old_changed_value.size())]
+vars.put(&quot;old_changed_value&quot;, old)
+def new_changed_value=[&apos;approved&apos;, &apos;declined&apos;, &apos;review&apos;]
+def nex = new_changed_value[new Random().nextInt(new_changed_value.size())]
+vars.put(&quot;new_changed_value&quot; , nex)
+
+def auth_method=[&apos;2FA&apos;, &apos;password&apos;, &apos;biometric&apos;]
+def auth=auth_method[new Random().nextInt(auth_method.size())]
+vars.put(&quot;auth_method&quot;,auth)
+
+
+</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor- getVpnValues" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">def list = [&quot;true&quot; , &quot;false&quot;] 
+def value = list[new Random().nextInt(list.size())]
+vars.put(&quot;vpnValue&quot; , value)</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor - getCountryName&amp;&amp;Code" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">import java.util.Locale
+import java.util.Random
+
+def random = new Random()
+def countryMap = [:]
+
+// Names the API rejects - map them to accepted alternatives
+def nameOverrides = [
+    &apos;U.S. Virgin Islands&apos;     : &apos;United States Virgin Islands&apos;,
+    &apos;U.S. Outlying Islands&apos;   : &apos;United States Outlying Islands&apos;,
+    &apos;St. Martin&apos;              : &apos;Saint Martin&apos;,
+    &apos;St. Barthélemy&apos;          : &apos;Saint Barthelemy&apos;,
+    &apos;Côte d\&apos;Ivoire&apos;          : &apos;Cote Ivoire&apos;,
+    &apos;Réunion&apos;                 : &apos;Reunion&apos;,
+    &apos;São Tomé and Príncipe&apos;   : &apos;Sao Tome and Principe&apos;,
+    &apos;Åland Islands&apos;           : &apos;Aland Islands&apos;,
+]
+
+for (code in Locale.getISOCountries()) {
+    def locale = new Locale(&quot;&quot;, code)
+    def rawName = locale.getDisplayCountry(Locale.ENGLISH)
+
+    // Apply override if exists, otherwise use raw name
+    def countryName = nameOverrides.containsKey(rawName) ? nameOverrides[rawName] : rawName
+
+    // Validate against API&apos;s allowed pattern
+    if (countryName ==~ /^[A-Za-z][A-Za-z .&apos;-]*[A-Za-z]$/) {
+        countryMap[countryName] = [
+            iso2: code,
+            iso3: locale.getISO3Country()
+        ]
+    }
+}
+
+// Cities Map
+def citiesMap = [
+    &apos;United States&apos;              : [&apos;New York&apos;, &apos;Los Angeles&apos;],
+    &apos;Egypt&apos;                      : [&apos;Cairo&apos;, &apos;Giza&apos;],
+    &apos;United Arab Emirates&apos;       : [&apos;Dubai&apos;, &apos;Abu Dhabi&apos;],
+    &apos;United States Virgin Islands&apos;: [&apos;Charlotte Amalie&apos;, &apos;Christiansted&apos;],
+]
+
+// Random country
+def countries = countryMap.keySet().toList()
+def randomCountry = countries[random.nextInt(countries.size())]
+
+// Get ISO codes
+def iso2 = countryMap[randomCountry].iso2
+def iso3 = countryMap[randomCountry].iso3
+
+// City
+def cityList = citiesMap[randomCountry]
+def randomCity = cityList ? cityList[random.nextInt(cityList.size())] : &quot;City&quot;
+
+// Save variables
+vars.put(&apos;country&apos;, randomCountry)
+vars.put(&apos;iso2&apos;, iso2)
+vars.put(&apos;iso3&apos;, iso3)
+vars.put(&apos;ip_city&apos;, randomCity)</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor- get_emailDomainFromCSVfile" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">def email = vars.get(&quot;user_email&quot;)
+def emailDomain = &quot;&quot; 
+
+if(email!= null){
+	if(email.contains(&apos;@&apos;)){
+		emailDomain=email.split(&apos;@&apos;)[1]
+	}
+}else {
+        emailDomain=null 
+	}
+vars.put(&quot;Domain&quot;, emailDomain)</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor-suer the format of te big num " enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">String phone = vars.get(&quot;benef_phone&quot;)
+
+// Remove scientific notation if present
+if (phone.contains(&quot;E&quot;) || phone.contains(&quot;e&quot;)) {
+    phone = new java.math.BigDecimal(phone).toPlainString()
+}
+
+// Remove any decimal point (e.g., 2.01012E11 → 201012000000)
+phone = phone.replaceAll(&quot;\\.0*\$&quot;, &quot;&quot;)
+
+vars.put(&quot;benef_phone&quot;, phone)
+
+String benef_acct_num = vars.get(&quot;benef_acct_num&quot;)
+
+// Remove scientific notation if present
+if (benef_acct_num.contains(&quot;E&quot;) || benef_acct_num.contains(&quot;e&quot;)) {
+    phone = new java.math.BigDecimal(benef_acct_num).toPlainString()
+}
+
+// Remove any decimal point (e.g., 2.01012E11 → 201012000000)
+benef_acct_num = benef_acct_num.replaceAll(&quot;\\.0*\$&quot;, &quot;&quot;)
+
+vars.put(&quot;benef_acct_num&quot;, benef_acct_num)</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor-shipping_phone" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">String phone = vars.get(&quot;shipping_phone&quot;)
+
+// Remove scientific notation if present
+if (phone.contains(&quot;E&quot;) || phone.contains(&quot;e&quot;)) {
+    phone = new java.math.BigDecimal(phone).toPlainString()
+}
+
+// Remove any decimal point (e.g., 2.01012E11 → 201012000000)
+phone = phone.replaceAll(&quot;\\.0*\$&quot;, &quot;&quot;)
+
+vars.put(&quot;shipping_phone&quot;, phone)</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor-accountTdata" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">def accountTypes = [&apos;joint_checking&apos;, &apos;money_market&apos;, &apos;brokerage&apos;, &apos;trust_fund&apos;] ; 
+def value = accountTypes[new Random().nextInt(accountTypes.size())]
+def userCategories = [&apos;premium_subscriber&apos;, &apos;merchant_account&apos;, &apos;system_admin&apos;, &apos;guest_user&apos;]
+def value1= userCategories[new Random().nextInt(userCategories.size())]
+vars.put(&quot;accountTypes&quot;,value)
+vars.put(&quot;userCategories&quot;,value)</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor-userData" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">import java.util.Random
+
+def random = new Random()
+
+def genderList = [&quot;male&quot;, &quot;female&quot;]
+def gender = genderList[random.nextInt(genderList.size())]
+
+def familyStatusesList = [&apos;single&apos;, &apos;married&apos;, &apos;divorced&apos;, &apos;widowed&apos;, &apos;annulled&apos;]
+def familyStatus = familyStatusesList[random.nextInt(familyStatusesList.size())]
+
+def userAccountStatusList = [&apos;active&apos;, &apos;pending_kyc&apos;, &apos;restricted&apos;]
+def userAccountStatus = userAccountStatusList[random.nextInt(userAccountStatusList.size())]
+
+def userVerificationLevelList = [&apos;none&apos;, &apos;basic&apos;, &apos;verified&apos;]
+def userVerificationLevel = userVerificationLevelList[random.nextInt(userVerificationLevelList.size())]
+
+def userTypeList = [&apos;individual&apos;, &apos;corporate&apos;]
+def userType = userTypeList[random.nextInt(userTypeList.size())]
+
+// timestamp
+long now = System.currentTimeMillis() / 1000
+int min = 86400 * 30
+int max = 86400 * 365
+long randomOffset = min + (long)(Math.random() * (max - min))
+long result = now - randomOffset
+
+// store in JMeter vars
+vars.put(&quot;userGender&quot;, gender)
+vars.put(&quot;familyStatuses&quot;, familyStatus)
+vars.put(&quot;user_account_status&quot;, userAccountStatus)
+vars.put(&quot;user_verification_level&quot;, userVerificationLevel)
+vars.put(&quot;randomTimestamp&quot;, result.toString())
+vars.put(&quot;user_type&quot;, userType)</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor-device" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">def deviceTypes = [&apos;smartphone&apos;, &apos;tablet&apos;, &apos;desktop_pc&apos;, &apos;smart_tv&apos;, &apos;pos_terminal&apos;]
+Random random =new Random();
+def value = deviceTypes[random.nextInt(deviceTypes.size())]
+vars.put(&quot;deviceTypes&quot;, value)
+
+</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor-card" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">Random random = new Random()
+
+def randomInt = { int min, int max -&gt; min + random.nextInt(max - min) }
+def randomFrom = { List list -&gt; list[random.nextInt(list.size())] }
+def randomBool = { double probability -&gt; random.nextDouble() &lt; probability }
+
+// BIN Level
+vars.put(&quot;bin_level&quot;, randomFrom([
+    &quot;Low Risk BINs&quot;, &quot;Medium Risk BINs&quot;, &quot;High Risk BINs&quot;,
+    &quot;Blacklisted BINs&quot;, &quot;Whitelisted BINs&quot;, &quot;Corporate BINs&quot;,
+    &quot;Prepaid BINs&quot;, &quot;Debit BINs&quot;, &quot;Credit BINs&quot;,
+    &quot;International BINs&quot;, &quot;Domestic BINs&quot;
+]))
+
+// Card Expiry
+def card_expire = &quot;202${randomInt(4, 9)}-${String.valueOf(randomInt(1, 12)).padLeft(2, &apos;0&apos;)}&quot;
+vars.put(&quot;card_expire&quot;, card_expire)
+
+// AVS Result
+vars.put(&quot;card_avs_result&quot;, randomFrom([&apos;Y&apos;, &apos;N&apos;, &apos;A&apos;, &apos;Z&apos;, &apos;U&apos;]))
+
+// CVV Result — was storing the closure itself, now stores the value
+vars.put(&quot;card_cvv_result&quot;, randomBool(0.9).toString())
+
+// SCA Method
+vars.put(&quot;card_sca_method&quot;, randomFrom([&apos;3DS&apos;, &apos;OTP&apos;, &apos;Biometric&apos;, &apos;None&apos;]))
+
+// 3D Status
+vars.put(&quot;card_status3d&quot;, randomFrom([&apos;authenticated&apos;, &apos;attempted&apos;, &apos;failed&apos;, &apos;not_enrolled&apos;]))</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor-SelectCurrency" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">def currencies = [&apos;USD&apos;, &apos;EGP&apos;, &apos;EUR&apos;, &apos;AED&apos;]
+def value = currencies[new Random().nextInt(currencies.size())]
+vars.put(&quot;currCode&quot; ,value )</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor-bankStatus" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">def bankStatuses = [&apos;cleared&apos;, &apos;frozen&apos;, &apos;pending_approval&apos;, &apos;returned&apos;, &apos;chargeback&apos;]
+def value=bankStatuses[new Random().nextInt(bankStatuses.size())]
+vars.put(&quot;bankStatus&quot;,value)</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor-hashs" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">def value = &quot;${__UUID()}&quot; 
+def list = value.split(&apos;-&apos;)
+def result = list.join(&quot;&quot;)
+vars.put(&quot;hasvalue&quot;, result)</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor-transRefNumber" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">import java.util.concurrent.atomic.AtomicLong
+
+// global counter (shared بين كل threads)
+if (props.get(&quot;counter&quot;) == null) {
+    props.put(&quot;counter&quot;, new AtomicLong(System.currentTimeMillis()))
+}
+
+def counter = props.get(&quot;counter&quot;) as AtomicLong
+
+// unique number
+def uniqueNumber = counter.incrementAndGet()
+
+vars.put(&quot;tran_ref_number&quot;, uniqueNumber.toString())</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor-ip" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">def ip_type=[&apos;residential&apos;, &apos;cellular&apos;, &apos;hosting&apos;, &apos;business&apos;]
+def type=ip_type[new Random().nextInt(ip_type.size())]
+vars.put(&quot;ip_type&quot;, type)</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor-benefData" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">def benef_acct_type = [&apos;checking&apos;, &apos;savings&apos;]
+def value = benef_acct_type[new Random().nextInt(benef_acct_type.size())]
+
+def benef_bank_type = [&apos;commercial&apos;, &apos;digital&apos;, &apos;investment&apos;]
+def value1 = benef_bank_type[new Random().nextInt(benef_bank_type.size())]
+
+def benef_entity_type = [&apos;individual&apos;, &apos;company&apos;]
+def value2 = benef_entity_type[new Random().nextInt(benef_entity_type.size())]  // ← was missing )
+
+vars.put(&quot;benef_acct_type&quot;, value)
+vars.put(&quot;benef_bank_type&quot;, value1)
+vars.put(&quot;benef_entity_type&quot;, value2)
+</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <kg.apc.jmeter.perfmon.PerfMonCollector guiclass="kg.apc.jmeter.vizualizers.PerfMonGui" testclass="kg.apc.jmeter.perfmon.PerfMonCollector" testname="jp@gc - PerfMon Metrics Collector" enabled="false">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+          <longProp name="interval_grouping">1000</longProp>
+          <boolProp name="graph_aggregated">false</boolProp>
+          <stringProp name="include_sample_labels"></stringProp>
+          <stringProp name="exclude_sample_labels"></stringProp>
+          <stringProp name="start_offset"></stringProp>
+          <stringProp name="end_offset"></stringProp>
+          <boolProp name="include_checkbox_state">false</boolProp>
+          <boolProp name="exclude_checkbox_state">false</boolProp>
+          <collectionProp name="metricConnections">
+            <collectionProp name="917712290">
+              <stringProp name="-1204607085">localhost</stringProp>
+              <stringProp name="1600768">4444</stringProp>
+              <stringProp name="66952">CPU</stringProp>
+              <stringProp name="0"></stringProp>
+            </collectionProp>
+            <collectionProp name="-1383002031">
+              <stringProp name="-1204607085">localhost</stringProp>
+              <stringProp name="1600768">4444</stringProp>
+              <stringProp name="-1993889503">Memory</stringProp>
+              <stringProp name="0"></stringProp>
+            </collectionProp>
+            <collectionProp name="-1270662015">
+              <stringProp name="-1204607085">localhost</stringProp>
+              <stringProp name="1600768">4444</stringProp>
+              <stringProp name="-274342153">Network I/O</stringProp>
+              <stringProp name="0"></stringProp>
+            </collectionProp>
+          </collectionProp>
+        </kg.apc.jmeter.perfmon.PerfMonCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

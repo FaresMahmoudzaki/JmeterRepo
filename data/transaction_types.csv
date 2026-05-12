@@ -1,0 +1,17 @@
+action_type,amount_min,amount_max,score_min,score_max
+money_transfer,1000,100000000,50,54
+withdrawal,25000,25000,50,52
+purchase,1000,27000,51,55
+deposit,255000,255000,53,56
+new_beneficiary,10,27000,52,53
+login,27000,27000,52,53
+account_login_fail,100000000,100000000,50,53
+account_password_change,25000,25000,51,52
+phone_change,100000000,100000000,53,54
+email_change,10,10000,50,53
+account_modification,50000,,,
+Mobile_Wallet_Fund_Transfer,75000,,,
+Login_Failed_Wallet,75000,,,
+chargeback,75000,,,
+verification,75000,,,
+account_register,75000,,,

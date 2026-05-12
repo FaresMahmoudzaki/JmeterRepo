@@ -1,0 +1,15 @@
+cardBrands,cardIssuers,cardTypes,card_bin
+card_brand,JPMorgan Chase,virtual_single_use,411111
+Visa,Bank of America,secured_credit,555555
+Mastercard,Wells Fargo,corporate_expense,378282
+American Express,Citibank,student_debit,601111
+Discover,HSBC,personal_credit,620000
+TEST_VISA,Barclays,personal_debit,508500
+TEST_MC,Capital One,business_debit,675964
+TEST_AMEX,American Express,prepaid,220000
+TEST_CARD_1,Discover Bank,virtual_single_use,235964
+TEST_CARD_2,Santander,secured_credit,691928
+JCB,BNP Paribas,corporate_expense,147892
+Maestro,Deutsche Bank,student_debit,603856
+MIR,ING Bank,personal_credit,595820
+UnionPay,Standard Chartered,personal_debit,515784
