@@ -1,0 +1,33 @@
+2026-05-15 16:08:28,162 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-05-15 16:08:28,214 INFO o.a.j.JMeter: Loading user properties from: D:\apache-jmeter-5.6.3\bin\user.properties
+2026-05-15 16:08:28,236 INFO o.a.j.JMeter: Loading system properties from: D:\apache-jmeter-5.6.3\bin\system.properties
+2026-05-15 16:08:28,237 INFO o.a.j.JMeter: Setting JMeter property: threads=10
+2026-05-15 16:08:28,237 INFO o.a.j.JMeter: Setting JMeter property: rampup=5
+2026-05-15 16:08:28,237 INFO o.a.j.JMeter: Setting JMeter property: loop=10
+2026-05-15 16:08:28,237 INFO o.a.j.JMeter: Setting JMeter property: throughput=300
+2026-05-15 16:08:28,246 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-05-15 16:08:28,246 INFO o.a.j.JMeter: Version 5.6.3
+2026-05-15 16:08:28,246 INFO o.a.j.JMeter: java.version=23.0.2
+2026-05-15 16:08:28,246 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2026-05-15 16:08:28,246 INFO o.a.j.JMeter: os.name=Windows 10
+2026-05-15 16:08:28,247 INFO o.a.j.JMeter: os.arch=amd64
+2026-05-15 16:08:28,247 INFO o.a.j.JMeter: os.version=10.0
+2026-05-15 16:08:28,247 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-05-15 16:08:28,247 INFO o.a.j.JMeter: java.awt.headless=true
+2026-05-15 16:08:28,247 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-05-15 16:08:28,247 INFO o.a.j.JMeter: Available Processors =4
+2026-05-15 16:08:28,271 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-05-15 16:08:28,272 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-05-15 16:08:28,272 INFO o.a.j.JMeter: JMeterHome=D:\apache-jmeter-5.6.3
+2026-05-15 16:08:28,272 INFO o.a.j.JMeter: user.dir  =C:\Users\HP\.jenkins\workspace\JmeterResult
+2026-05-15 16:08:28,272 INFO o.a.j.JMeter: PWD       =C:\Users\HP\.jenkins\workspace\JmeterResult
+2026-05-15 16:08:28,590 INFO o.a.j.JMeter: IP: 10.81.234.6 Name: DESKTOP-NDBICF3 FullName: 10.81.234.6
+2026-05-15 16:08:28,643 ERROR o.a.j.JMeter: An error occurred: 
+java.lang.IllegalArgumentException: Cannot write to 'D:\JMeterScript\OutputReports\Report2' as folder is not empty
+	at org.apache.jorphan.util.JOrphanUtils.canSafelyWriteToFolder(JOrphanUtils.java:664) ~[jorphan.jar:5.6.3]
+	at org.apache.jorphan.util.JOrphanUtils.canSafelyWriteToFolder(JOrphanUtils.java:620) ~[jorphan.jar:5.6.3]
+	at org.apache.jmeter.JMeter.extractAndSetReportOutputFolder(JMeter.java:542) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:492) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) [ApacheJMeter.jar:5.6.3]

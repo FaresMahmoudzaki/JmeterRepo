@@ -1,0 +1,201 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1778858141068,802,Transaction Controller- sentTransaction ,500,"Number of samples in transaction : 1, number of failing samples : 1",Thread Group 1-2,,false,,567,9329,7,7,null,0,2038,168
+1778858143101,802,HTTP Request - sendTransaction  2,500,,Thread Group 1-2,text,false,,567,9329,7,7,http://192.168.1.47:7979/FrdEngine/transaction,741,0,168
+1778858142067,2031,Transaction Controller- sentTransaction ,500,"Number of samples in transaction : 1, number of failing samples : 1",Thread Group 1-4,,false,,567,9360,10,10,null,0,1035,1168
+1778858143101,2031,HTTP Request - sendTransaction  4,500,,Thread Group 1-4,text,false,,567,9360,10,10,http://192.168.1.47:7979/FrdEngine/transaction,1989,0,1168
+1778858141560,2346,Transaction Controller- sentTransaction ,500,"Number of samples in transaction : 1, number of failing samples : 1",Thread Group 1-3,,false,,567,9333,10,10,null,0,1545,1167
+1778858143102,2346,HTTP Request - sendTransaction  3,500,,Thread Group 1-3,text,false,,567,9333,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2345,0,1167
+1778858142554,2711,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-5,,true,,10041,9306,10,10,null,0,548,112
+1778858143101,2711,HTTP Request - sendTransaction  5,200,,Thread Group 1-5,text,true,,10041,9306,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2710,0,112
+1778858143548,3236,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-7,,true,,10027,9300,10,10,null,0,84,145
+1778858143629,3236,HTTP Request - sendTransaction  7,200,,Thread Group 1-7,text,true,,10027,9300,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3235,0,145
+1778858143053,3785,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-6,,true,,10016,9289,10,10,null,0,63,154
+1778858143115,3785,HTTP Request - sendTransaction  6,200,,Thread Group 1-6,text,true,,10016,9289,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3785,0,154
+1778858143913,3390,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,10563,9313,10,10,null,0,51,132
+1778858143964,3390,HTTP Request - sendTransaction  2,200,,Thread Group 1-2,text,true,,10563,9313,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3387,0,132
+1778858144047,3374,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-8,,true,,10535,9288,10,10,null,0,82,104
+1778858144129,3374,HTTP Request - sendTransaction  8,200,,Thread Group 1-8,text,true,,10535,9288,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3248,0,104
+1778858144545,3652,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-9,,true,,10054,9317,10,10,null,0,69,84
+1778858144612,3652,HTTP Request - sendTransaction  9,200,,Thread Group 1-9,text,true,,10054,9317,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3652,0,84
+1778858145046,3484,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-10,,true,,10040,9311,10,10,null,0,50,74
+1778858145094,3484,HTTP Request - sendTransaction  10,200,,Thread Group 1-10,text,true,,10040,9311,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3484,0,74
+1778858145134,4628,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-4,,true,,10041,9317,10,10,null,0,22,157
+1778858145154,4628,HTTP Request - sendTransaction  4,200,,Thread Group 1-4,text,true,,10041,9317,10,10,http://192.168.1.47:7979/FrdEngine/transaction,4628,0,157
+1778858140651,7266,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,9817,9300,10,10,null,0,2450,1168
+1778858143101,7266,HTTP Request - sendTransaction  1,200,,Thread Group 1-1,text,true,,9817,9300,10,10,http://192.168.1.47:7979/FrdEngine/transaction,7266,0,1168
+1778858145455,4904,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-3,,true,,10340,9301,10,10,null,0,46,52
+1778858145501,4904,HTTP Request - sendTransaction  3,200,,Thread Group 1-3,text,true,,10340,9301,10,10,http://192.168.1.47:7979/FrdEngine/transaction,4904,0,52
+1778858145818,5139,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-5,,true,,10552,9306,10,10,null,0,46,0
+1778858145863,5139,HTTP Request - sendTransaction  5,200,,Thread Group 1-5,text,true,,10552,9306,10,10,http://192.168.1.47:7979/FrdEngine/transaction,5104,0,0
+1778858146905,4131,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-6,,true,,10020,9292,10,10,null,0,25,0
+1778858146930,4131,HTTP Request - sendTransaction  6,200,,Thread Group 1-6,text,true,,10020,9292,10,10,http://192.168.1.47:7979/FrdEngine/transaction,4131,0,0
+1778858146875,4209,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-7,,true,,10061,9334,10,10,null,0,59,0
+1778858146933,4209,HTTP Request - sendTransaction  7,200,,Thread Group 1-7,text,true,,10061,9334,10,10,http://192.168.1.47:7979/FrdEngine/transaction,4209,0,0
+1778858147505,3878,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-8,,true,,10705,9354,10,10,null,0,21,0
+1778858147525,3878,HTTP Request - sendTransaction  8,200,,Thread Group 1-8,text,true,,10705,9354,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3784,0,0
+1778858147357,5554,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,9815,9304,10,10,null,0,17,0
+1778858147374,5554,HTTP Request - sendTransaction  2,200,,Thread Group 1-2,text,true,,9815,9304,10,10,http://192.168.1.47:7979/FrdEngine/transaction,5553,0,0
+1778858148586,4347,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-10,,true,,10062,9281,10,10,null,0,30,0
+1778858148615,4347,HTTP Request - sendTransaction  10,200,,Thread Group 1-10,text,true,,10062,9281,10,10,http://192.168.1.47:7979/FrdEngine/transaction,4346,0,0
+1778858148272,4891,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-9,,true,,10321,9281,10,10,null,0,28,0
+1778858148300,4891,HTTP Request - sendTransaction  9,200,,Thread Group 1-9,text,true,,10321,9281,10,10,http://192.168.1.47:7979/FrdEngine/transaction,4823,0,0
+1778858149791,3646,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-4,,true,,10547,9300,10,10,null,0,24,0
+1778858149815,3646,HTTP Request - sendTransaction  4,200,,Thread Group 1-4,text,true,,10547,9300,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3602,0,0
+1778858150407,3041,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-3,,true,,10049,9318,10,10,null,0,15,0
+1778858150421,3041,HTTP Request - sendTransaction  3,200,,Thread Group 1-3,text,true,,10049,9318,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3041,0,0
+1778858150371,3113,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,10585,9337,10,10,null,0,23,0
+1778858150393,3113,HTTP Request - sendTransaction  1,200,,Thread Group 1-1,text,true,,10585,9337,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3113,0,0
+1778858151404,2783,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-8,,true,,10545,9305,10,10,null,0,20,0
+1778858151423,2783,HTTP Request - sendTransaction  8,200,,Thread Group 1-8,text,true,,10545,9305,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2744,0,0
+1778858151152,3492,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-7,,true,,10549,9304,10,10,null,0,36,0
+1778858151188,3492,HTTP Request - sendTransaction  7,200,,Thread Group 1-7,text,true,,10549,9304,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3468,0,0
+1778858151061,3785,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-6,,true,,10038,9307,10,10,null,0,29,0
+1778858151089,3785,HTTP Request - sendTransaction  6,200,,Thread Group 1-6,text,true,,10038,9307,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3785,0,0
+1778858151003,4265,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-5,,true,,10045,9313,10,10,null,0,25,0
+1778858151028,4265,HTTP Request - sendTransaction  5,200,,Thread Group 1-5,text,true,,10045,9313,10,10,http://192.168.1.47:7979/FrdEngine/transaction,4265,0,0
+1778858152928,2939,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,10586,9336,10,10,null,0,20,0
+1778858152947,2939,HTTP Request - sendTransaction  2,200,,Thread Group 1-2,text,true,,10586,9336,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2911,0,0
+1778858152964,3150,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-10,,true,,10547,9299,10,10,null,0,24,0
+1778858152988,3150,HTTP Request - sendTransaction  10,200,,Thread Group 1-10,text,true,,10547,9299,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3129,0,0
+1778858153507,2995,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,10349,9308,10,10,null,0,22,0
+1778858153528,2995,HTTP Request - sendTransaction  1,200,,Thread Group 1-1,text,true,,10349,9308,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2993,0,0
+1778858153191,3366,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-9,,true,,10029,9299,10,10,null,0,20,0
+1778858153211,3366,HTTP Request - sendTransaction  9,200,,Thread Group 1-9,text,true,,10029,9299,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3366,0,0
+1778858153462,3129,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-3,,true,,10545,9304,10,10,null,0,14,0
+1778858153476,3129,HTTP Request - sendTransaction  3,200,,Thread Group 1-3,text,true,,10545,9304,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3116,0,0
+1778858153462,3571,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-4,,true,,10049,9317,10,10,null,0,13,0
+1778858153474,3571,HTTP Request - sendTransaction  4,200,,Thread Group 1-4,text,true,,10049,9317,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3571,0,0
+1778858154211,3168,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-8,,true,,10647,9305,10,10,null,0,37,0
+1778858154247,3168,HTTP Request - sendTransaction  8,200,,Thread Group 1-8,text,true,,10647,9305,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3139,0,0
+1778858154685,2942,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-7,,true,,9810,9300,10,10,null,0,34,0
+1778858154719,2942,HTTP Request - sendTransaction  7,200,,Thread Group 1-7,text,true,,9810,9300,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2942,0,0
+1778858154876,3440,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-6,,true,,10565,9270,10,10,null,0,30,0
+1778858154906,3440,HTTP Request - sendTransaction  6,200,,Thread Group 1-6,text,true,,10565,9270,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3417,0,0
+1778858155294,3369,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-5,,true,,10050,9325,10,10,null,0,16,0
+1778858155309,3369,HTTP Request - sendTransaction  5,200,,Thread Group 1-5,text,true,,10050,9325,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3369,0,0
+1778858155888,2953,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,10038,9304,10,10,null,0,18,0
+1778858155906,2953,HTTP Request - sendTransaction  2,200,,Thread Group 1-2,text,true,,10038,9304,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2953,0,0
+1778858156139,2858,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-10,,true,,10532,9294,10,10,null,0,15,0
+1778858156153,2858,HTTP Request - sendTransaction  10,200,,Thread Group 1-10,text,true,,10532,9294,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2781,0,0
+1778858156606,2762,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-3,,true,,10043,9316,10,10,null,0,18,0
+1778858156624,2762,HTTP Request - sendTransaction  3,200,,Thread Group 1-3,text,true,,10043,9316,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2761,0,0
+1778858156579,2789,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-9,,true,,10014,9284,10,10,null,0,18,0
+1778858156597,2789,HTTP Request - sendTransaction  9,200,,Thread Group 1-9,text,true,,10014,9284,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2789,0,0
+1778858156527,3075,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,10568,9318,10,10,null,0,47,0
+1778858156572,3075,HTTP Request - sendTransaction  1,200,,Thread Group 1-1,text,true,,10568,9318,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3074,0,0
+1778858157054,3233,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-4,,true,,10563,9315,10,10,null,0,39,0
+1778858157092,3233,HTTP Request - sendTransaction  4,200,,Thread Group 1-4,text,true,,10563,9315,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3202,0,0
+1778858157417,3726,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-8,,true,,10544,9299,10,10,null,0,11,0
+1778858157428,3726,HTTP Request - sendTransaction  8,200,,Thread Group 1-8,text,true,,10544,9299,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3655,0,0
+1778858157662,3644,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-7,,true,,10033,9305,10,10,null,0,11,0
+1778858157673,3644,HTTP Request - sendTransaction  7,200,,Thread Group 1-7,text,true,,10033,9305,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3643,0,0
+1778858158355,3374,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-6,,true,,10534,9293,10,10,null,0,26,0
+1778858158380,3374,HTTP Request - sendTransaction  6,200,,Thread Group 1-6,text,true,,10534,9293,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3345,0,0
+1778858158686,3089,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-5,,true,,10536,9297,10,10,null,0,43,0
+1778858158728,3089,HTTP Request - sendTransaction  5,200,,Thread Group 1-5,text,true,,10536,9297,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3087,0,0
+1778858158860,3227,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,10558,9308,10,10,null,0,16,0
+1778858158876,3227,HTTP Request - sendTransaction  2,200,,Thread Group 1-2,text,true,,10558,9308,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3225,0,0
+1778858159020,3138,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-10,,true,,10347,9312,10,10,null,0,39,0
+1778858159059,3138,HTTP Request - sendTransaction  10,200,,Thread Group 1-10,text,true,,10347,9312,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3138,0,0
+1778858159388,3124,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-3,,true,,10632,9293,10,10,null,0,9,0
+1778858159397,3124,HTTP Request - sendTransaction  3,200,,Thread Group 1-3,text,true,,10632,9293,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3109,0,0
+1778858159388,3349,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-9,,true,,10346,9311,10,10,null,0,13,0
+1778858159400,3349,HTTP Request - sendTransaction  9,200,,Thread Group 1-9,text,true,,10346,9311,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3349,0,0
+1778858159652,3296,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,10105,9327,10,10,null,0,20,0
+1778858159671,3296,HTTP Request - sendTransaction  1,200,,Thread Group 1-1,text,true,,10105,9327,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3296,0,0
+1778858160330,3499,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-4,,true,,10065,9328,10,10,null,0,22,0
+1778858160351,3499,HTTP Request - sendTransaction  4,200,,Thread Group 1-4,text,true,,10065,9328,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3498,0,0
+1778858161155,2967,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-8,,true,,10012,9281,10,10,null,0,18,0
+1778858161173,2967,HTTP Request - sendTransaction  8,200,,Thread Group 1-8,text,true,,10012,9281,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2967,0,0
+1778858161819,2610,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-5,,true,,10030,9307,10,10,null,0,8,0
+1778858161827,2610,HTTP Request - sendTransaction  5,200,,Thread Group 1-5,text,true,,10030,9307,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2575,0,0
+1778858161319,3416,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-7,,true,,10001,9330,10,10,null,0,17,0
+1778858161336,3416,HTTP Request - sendTransaction  7,200,,Thread Group 1-7,text,true,,10001,9330,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3349,0,0
+1778858161761,3001,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-6,,true,,10539,9296,10,10,null,0,26,0
+1778858161786,3001,HTTP Request - sendTransaction  6,200,,Thread Group 1-6,text,true,,10539,9296,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3001,0,0
+1778858162104,2785,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,10043,9310,10,10,null,0,21,0
+1778858162124,2785,HTTP Request - sendTransaction  2,200,,Thread Group 1-2,text,true,,10043,9310,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2785,0,0
+1778858162200,2809,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-10,,true,,10066,9336,10,10,null,0,11,0
+1778858162211,2809,HTTP Request - sendTransaction  10,200,,Thread Group 1-10,text,true,,10066,9336,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2809,0,0
+1778858162522,2663,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-3,,true,,10085,9348,10,10,null,0,18,0
+1778858162539,2663,HTTP Request - sendTransaction  3,200,,Thread Group 1-3,text,true,,10085,9348,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2662,0,0
+1778858162969,2658,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,10046,9317,10,10,null,0,10,0
+1778858162979,2658,HTTP Request - sendTransaction  1,200,,Thread Group 1-1,text,true,,10046,9317,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2657,0,0
+1778858162753,3102,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-9,,true,,10014,9285,10,10,null,0,16,0
+1778858162768,3102,HTTP Request - sendTransaction  9,200,,Thread Group 1-9,text,true,,10014,9285,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3102,0,0
+1778858163855,2825,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-4,,true,,10552,9302,10,10,null,0,37,0
+1778858163891,2825,HTTP Request - sendTransaction  4,200,,Thread Group 1-4,text,true,,10552,9302,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2797,0,0
+1778858164142,3108,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-8,,true,,10035,9310,10,10,null,0,35,0
+1778858164177,3108,HTTP Request - sendTransaction  8,200,,Thread Group 1-8,text,true,,10035,9310,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3107,0,0
+1778858164438,2855,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-5,,true,,10352,9325,10,10,null,0,10,0
+1778858164447,2855,HTTP Request - sendTransaction  5,200,,Thread Group 1-5,text,true,,10352,9325,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2855,0,0
+1778858164788,2791,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-6,,true,,10337,9308,10,10,null,0,8,0
+1778858164795,2791,HTTP Request - sendTransaction  6,200,,Thread Group 1-6,text,true,,10337,9308,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2791,0,0
+1778858164754,3219,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-7,,true,,10128,9303,10,10,null,0,9,0
+1778858164762,3219,HTTP Request - sendTransaction  7,200,,Thread Group 1-7,text,true,,10128,9303,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3219,0,0
+1778858164910,3299,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,10080,9293,10,10,null,0,17,0
+1778858164926,3299,HTTP Request - sendTransaction  2,200,,Thread Group 1-2,text,true,,10080,9293,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3299,0,0
+1778858165206,3000,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-3,,true,,10026,9301,10,10,null,0,35,0
+1778858165240,3000,HTTP Request - sendTransaction  3,200,,Thread Group 1-3,text,true,,10026,9301,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3000,0,0
+1778858165020,3248,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-10,,true,,10521,9269,10,10,null,0,9,0
+1778858165029,3248,HTTP Request - sendTransaction  10,200,,Thread Group 1-10,text,true,,10521,9269,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3247,0,0
+1778858165874,3178,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-9,,true,,10570,9337,10,10,null,0,37,0
+1778858165911,3178,HTTP Request - sendTransaction  9,200,,Thread Group 1-9,text,true,,10570,9337,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3153,0,0
+1778858165643,3538,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,10042,9309,10,10,null,0,57,0
+1778858165700,3538,HTTP Request - sendTransaction  1,200,,Thread Group 1-1,text,true,,10042,9309,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3538,0,0
+1778858166720,3121,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-4,,true,,10560,9311,10,10,null,0,35,0
+1778858166755,3121,HTTP Request - sendTransaction  4,200,,Thread Group 1-4,text,true,,10560,9311,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3098,0,0
+1778858167304,2903,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-5,,true,,10036,9304,10,10,null,0,9,0
+1778858167312,2903,HTTP Request - sendTransaction  5,200,,Thread Group 1-5,text,true,,10036,9304,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2903,0,0
+1778858167287,3128,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-8,,true,,10042,9304,10,10,null,0,16,0
+1778858167303,3128,HTTP Request - sendTransaction  8,200,,Thread Group 1-8,text,true,,10042,9304,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3128,0,0
+1778858167984,2537,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-7,,true,,10024,9307,10,10,null,0,36,0
+1778858168020,2537,HTTP Request - sendTransaction  7,200,,Thread Group 1-7,text,true,,10024,9307,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2536,0,0
+1778858167594,2969,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-6,,true,,10555,9313,10,10,null,0,32,0
+1778858167626,2969,HTTP Request - sendTransaction  6,200,,Thread Group 1-6,text,true,,10555,9313,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2969,0,0
+1778858168243,2866,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-3,,true,,10055,9332,10,10,null,0,31,0
+1778858168273,2866,HTTP Request - sendTransaction  3,200,,Thread Group 1-3,text,true,,10055,9332,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2866,0,0
+1778858168228,3087,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,10136,9381,10,10,null,0,34,0
+1778858168262,3087,HTTP Request - sendTransaction  2,200,,Thread Group 1-2,text,true,,10136,9381,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3086,0,0
+1778858168278,3533,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-10,,true,,10044,9305,10,10,null,0,11,0
+1778858168289,3533,HTTP Request - sendTransaction  10,200,,Thread Group 1-10,text,true,,10044,9305,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3532,0,0
+1778858169095,3347,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-9,,true,,9807,9291,10,10,null,0,17,0
+1778858169112,3347,HTTP Request - sendTransaction  9,200,,Thread Group 1-9,text,true,,9807,9291,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3346,0,0
+1778858169240,3537,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,10619,9288,10,10,null,0,24,0
+1778858169263,3537,HTTP Request - sendTransaction  1,200,,Thread Group 1-1,text,true,,10619,9288,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3514,0,0
+1778858170218,2716,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-5,,true,,10590,9290,10,10,null,0,22,0
+1778858170240,2716,HTTP Request - sendTransaction  5,200,,Thread Group 1-5,text,true,,10590,9290,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2693,0,0
+1778858169877,3466,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-4,,true,,10342,9309,10,10,null,0,8,0
+1778858169885,3466,HTTP Request - sendTransaction  4,200,,Thread Group 1-4,text,true,,10342,9309,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3465,0,0
+1778858170562,2795,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-7,,true,,10516,9273,10,10,null,0,26,0
+1778858170587,2795,HTTP Request - sendTransaction  7,200,,Thread Group 1-7,text,true,,10516,9273,10,10,http://192.168.1.47:7979/FrdEngine/transaction,2795,0,0
+1778858170433,3185,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-8,,true,,10589,9332,10,10,null,0,13,0
+1778858170445,3185,HTTP Request - sendTransaction  8,200,,Thread Group 1-8,text,true,,10589,9332,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3101,0,0
+1778858170596,3161,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-6,,true,,10033,9307,10,10,null,0,7,0
+1778858170603,3161,HTTP Request - sendTransaction  6,200,,Thread Group 1-6,text,true,,10033,9307,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3161,0,0
+1778858171351,3141,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-2,,true,,10570,9314,10,10,null,0,21,0
+1778858171372,3141,HTTP Request - sendTransaction  2,200,,Thread Group 1-2,text,true,,10570,9314,10,10,http://192.168.1.47:7979/FrdEngine/transaction,3114,0,0
+1778858171144,3555,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-3,,true,,10054,9315,9,9,null,0,16,0
+1778858171159,3555,HTTP Request - sendTransaction  3,200,,Thread Group 1-3,text,true,,10054,9315,9,9,http://192.168.1.47:7979/FrdEngine/transaction,3555,0,0
+1778858171825,3238,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-10,,true,,10553,9301,8,8,null,0,31,0
+1778858171855,3238,HTTP Request - sendTransaction  10,200,,Thread Group 1-10,text,true,,10553,9301,8,8,http://192.168.1.47:7979/FrdEngine/transaction,3217,0,0
+1778858172467,2610,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-9,,true,,10587,9338,8,8,null,0,34,0
+1778858172501,2610,HTTP Request - sendTransaction  9,200,,Thread Group 1-9,text,true,,10587,9338,8,8,http://192.168.1.47:7979/FrdEngine/transaction,2609,0,0
+1778858172959,2515,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-5,,true,,10072,9339,8,8,null,0,29,0
+1778858172988,2515,HTTP Request - sendTransaction  5,200,,Thread Group 1-5,text,true,,10072,9339,8,8,http://192.168.1.47:7979/FrdEngine/transaction,2514,0,0
+1778858172803,2994,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,10563,9320,7,7,null,0,19,0
+1778858172821,2994,HTTP Request - sendTransaction  1,200,,Thread Group 1-1,text,true,,10563,9320,7,7,http://192.168.1.47:7979/FrdEngine/transaction,2925,0,0
+1778858173384,2472,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-7,,true,,10039,9306,7,7,null,0,5,0
+1778858173389,2472,HTTP Request - sendTransaction  7,200,,Thread Group 1-7,text,true,,10039,9306,7,7,http://192.168.1.47:7979/FrdEngine/transaction,2472,0,0
+1778858173353,2705,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-4,,true,,10542,9301,6,6,null,0,8,0
+1778858173361,2705,HTTP Request - sendTransaction  4,200,,Thread Group 1-4,text,true,,10542,9301,6,6,http://192.168.1.47:7979/FrdEngine/transaction,2642,0,0
+1778858173766,2414,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-6,,true,,10337,9303,5,5,null,0,10,0
+1778858173775,2414,HTTP Request - sendTransaction  6,200,,Thread Group 1-6,text,true,,10337,9303,5,5,http://192.168.1.47:7979/FrdEngine/transaction,2412,0,0
+1778858173633,2582,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-8,,true,,10532,9294,4,4,null,0,7,0
+1778858173640,2582,HTTP Request - sendTransaction  8,200,,Thread Group 1-8,text,true,,10532,9294,4,4,http://192.168.1.47:7979/FrdEngine/transaction,2572,0,0
+1778858175112,2070,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-9,,true,,10331,9304,3,3,null,0,7,0
+1778858175119,2070,HTTP Request - sendTransaction  9,200,,Thread Group 1-9,text,true,,10331,9304,3,3,http://192.168.1.47:7979/FrdEngine/transaction,2070,0,0
+1778858175096,2303,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-10,,true,,10147,9320,2,2,null,0,14,0
+1778858175109,2303,HTTP Request - sendTransaction  10,200,,Thread Group 1-10,text,true,,10147,9320,2,2,http://192.168.1.47:7979/FrdEngine/transaction,2303,0,0
+1778858175816,2120,Transaction Controller- sentTransaction ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,10121,9327,1,1,null,0,8,0
+1778858175824,2120,HTTP Request - sendTransaction  1,200,,Thread Group 1-1,text,true,,10121,9327,1,1,http://192.168.1.47:7979/FrdEngine/transaction,2120,0,0
